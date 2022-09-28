@@ -1,0 +1,165 @@
+html, body{
+    height: 100%;
+    font-family: Calibri;
+}
+
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 0px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(200,200,200);
+    border-radius: .3em;
+}
+
+.status{
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 15px;
+    padding: 20px;
+}
+
+.mealPref{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+}
+
+.mealPref .description p{color: rgb(130, 130, 130);}
+
+form {
+    display: grid; 
+    grid-template-columns: 1.8fr 0.2fr; 
+    grid-template-rows: 0.2fr 0.2fr 0.2fr; 
+    gap: 15px 10px; 
+    grid-template-areas: 
+      "breakfast drinkBre"
+      "lunch drinkLn"
+      "dinner drinkDn"; 
+    width: 500px; 
+    height: auto; 
+  }
+
+.position {
+    font-weight: bolder;
+    color: gray;
+    text-align: left;
+}
+
+.position label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.position select{
+    border: 2px solid rgb(225, 225, 225);
+    border-radius: 0.5em;
+    font-size: small;
+    padding: 10px;
+    /* display: block; */
+    width: 400px;
+}
+
+.drinkID{max-width: 190px;}
+
+.numberCircle {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 8px;
+
+    background: white;  
+    color: blue;
+    text-align: center;
+
+    font: 16px Arial, sans-serif;
+}
+
+#color1{background: green; color: white;}
+#color2{background: blue; color: white;}
+
+  .breakfast { grid-area: breakfast; }
+  .lunch { grid-area: lunch; }
+  .dinner { grid-area: dinner; }
+  .drinkBre { grid-area: drinkBre; }
+  .drinkLn { grid-area: drinkLn; }
+  .drinkDn { grid-area: drinkDn; }
+
+.check_class{
+    margin-top: 10px;
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+
+input[type="checkbox"]{
+    /* Dissapear button */
+    -webkit-appearance: none;
+    font: inherit;
+    color: currentColor;
+    width: 0.8em;
+    height: 0.8em;
+    border: 0.15px solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    background-color: rgb(80, 80, 255);
+    /* New button */
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.8em;
+    height: 0.8em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: white;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before{
+    transform: scale(1);
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button{
+    padding: 10px;
+    border-radius: .4em;
+    border: 2px solid rgb(225, 225, 225);
+    background-color: white;
+}
+
+#continue{
+    background-color: rgb(80, 80, 255);
+    color: rgb(225, 225, 225);
+}

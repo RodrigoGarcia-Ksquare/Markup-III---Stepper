@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <main>
+
+            <section class="status">
+                <div class="numberCircle" id="color1">1</div>
+                <div class="cabin">Cabin</div>
+                <div>&#9866;</div>
+                <div class="numberCircle" id="color2">2</div>
+                <div class="meals">Meals</div>
+                <div>&#9867;</div>
+                <div class="numberCircle">3</div>
+                <div class="upgrades">Upgrades</div>
+                <div>&#9867;</div>
+                <div class="numberCircle">4</div>
+                <div class="payment">Payment</div>
+            </section>
+
+            <section class="mealPref">
+                <div class="description">
+                    <h1>Meal Preferences</h1>
+                    <p>Your flight comes with a breakfast, lunch and inner. Please make your selections below. Changes to your order can be made up to 48 hours before your flight.</p>
+                </div>
+                <form>
+
+                        <div class="breakfast position">
+                            <label for="breakfast">
+                                Breakfast
+                            </label>
+            
+                            <select name="user_breakfast" id="breakfast">
+                                <option value="1">Sausage Egg Scramble Bowl</option>
+                                <option value="2">Club Sandwich Meal</option>
+                                <option value="3">Wagyu Beef Sliders Meal</option>
+                            </select>
+                        </div>
+
+                        <div class="lunch position">
+                            <label for="breakfast">
+                                lunch
+                            </label>
+            
+                            <select name="user_lunch" id="lunch">
+                                <option value="1">Sausage Egg Scramble Bowl</option>
+                                <option value="2">Club Sandwich Meal</option>
+                                <option value="3">Wagyu Beef Sliders Meal</option>
+                            </select>
+                        </div>
+                        <div class="dinner position">
+                            <label for="dinner">
+                                Dinner
+                            </label>
+            
+                            <select name="user_dinner" id="dinner">
+                                <option value="1">Sausage Egg Scramble Bowl</option>
+                                <option value="2">Club Sandwich Meal</option>
+                                <option value="3">Wagyu Beef Sliders Meal</option>
+                            </select>
+                        </div>
+
+                        <div class="drinkBre position" >
+                                <label for="drinkBre">
+                                    Drink
+                                </label>
+                
+                                <select name="user_drinkBre" id="drinkBre" class="drinkID">
+                                    <option value="1">Coffe</option>
+                                    <option value="2">Cranberry Juice</option>
+                                    <option value="3">Red Wine</option>
+                                </select>
+                        </div>
+                        
+                        <div class="drinkLn position">
+                            <label for="drinkBre">
+                                Drink
+                            </label>
+            
+                            <select name="user_drinkLn" id="drinkLn" class="drinkID">
+                                <option value="1">Coffe</option>
+                                <option value="2">Cranberry Juice</option>
+                                <option value="3">Red Wine</option>
+                            </select>
+                        </div>
+                        <div class="drinkDn position">
+                            <label for="drinkDn">
+                                Drink
+                            </label>
+            
+                            <select name="user_drinkDn" id="drinkDn" class="drinkID">
+                                <option value="1">Coffe</option>
+                                <option value="2">Cranberry Juice</option>
+                                <option value="3">Red Wine</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <div>
+                    <label for="check" class="check_class">
+                        <input type="checkbox" name="user_check" id="check">
+                        I'd like dessert, too!
+                    </label>
+                </div>
+                <div class="buttons">
+                    <div><button>Back</button></div>
+                    <div><button id="continue">Continue</button></div>
+                </div>
+            </section>
+
+        </main>
+        
+    </body>
+</html>
